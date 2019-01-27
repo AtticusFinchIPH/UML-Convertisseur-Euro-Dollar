@@ -85,6 +85,12 @@
         <ownedOperation xmi:id="_hU2hcCIxEemfI8RyT9hO8w" name="getEtatEditableVide">
           <ownedParameter xmi:id="_kt6vACIxEemfI8RyT9hO8w" type="_6rNw8CIqEemfI8RyT9hO8w" direction="return"/>
         </ownedOperation>
+        <ownedOperation xmi:id="_fXEg8CJDEemfI8RyT9hO8w" name="setPresentationGlobal">
+          <ownedParameter xmi:id="_inDD8CJDEemfI8RyT9hO8w" name="p" type="_jSGPECIiEemfI8RyT9hO8w"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_kHdt0CJDEemfI8RyT9hO8w" name="getPresentationGlobal">
+          <ownedParameter xmi:id="_nrIo4CJDEemfI8RyT9hO8w" type="_jSGPECIiEemfI8RyT9hO8w" direction="return"/>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_OWNOgCIjEemfI8RyT9hO8w" name="mapres" memberEnd="_OWNOgSIjEemfI8RyT9hO8w _OWNOhCIjEemfI8RyT9hO8w">
         <ownedEnd xmi:id="_OWNOgSIjEemfI8RyT9hO8w" name="vueChampTextNums" type="_7_cSkCIiEemfI8RyT9hO8w" association="_OWNOgCIjEemfI8RyT9hO8w">
@@ -163,21 +169,34 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_Zxa-gCIsEemfI8RyT9hO8w" name="ChTextException" visibility="public"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_f7Z0gCIsEemfI8RyT9hO8w" name="EtatEditableVide" visibility="public">
           <generalization xmi:id="_pudC8CIsEemfI8RyT9hO8w" general="_40bZACIrEemfI8RyT9hO8w"/>
+          <ownedOperation xmi:id="_nseTYCJIEemfI8RyT9hO8w" name="nonEditable"/>
+          <ownedOperation xmi:id="_nseTYSJIEemfI8RyT9hO8w" name="touche">
+            <ownedParameter xmi:id="_nseTYiJIEemfI8RyT9hO8w" name="txt">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_jhg_kCIsEemfI8RyT9hO8w" name="EtatEdiatable" visibility="public">
           <generalization xmi:id="_qRoogCIsEemfI8RyT9hO8w" general="_40bZACIrEemfI8RyT9hO8w"/>
+          <ownedOperation xmi:id="_v2BNYCJIEemfI8RyT9hO8w" name="touche">
+            <ownedParameter xmi:id="_v2BNYSJIEemfI8RyT9hO8w" name="txt">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_v2BNYiJIEemfI8RyT9hO8w" name="champVide"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_lHISgCIsEemfI8RyT9hO8w" name="EtatNonEditable" visibility="public">
           <generalization xmi:id="_zCZ6kCIsEemfI8RyT9hO8w" general="_40bZACIrEemfI8RyT9hO8w"/>
+          <ownedOperation xmi:id="_tlIv4CJIEemfI8RyT9hO8w" name="editable"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_05_xgCIwEemfI8RyT9hO8w" name="IEtats" memberEnd="_05_xgSIwEemfI8RyT9hO8w _06AYkCIwEemfI8RyT9hO8w" navigableOwnedEnd="_06AYkCIwEemfI8RyT9hO8w">
         <ownedEnd xmi:id="_05_xgSIwEemfI8RyT9hO8w" name="presentationChampTextNums" type="_H9bukCIjEemfI8RyT9hO8w" association="_05_xgCIwEemfI8RyT9hO8w">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_05_xgiIwEemfI8RyT9hO8w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_05_xgiIwEemfI8RyT9hO8w" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_05_xgyIwEemfI8RyT9hO8w" value="1"/>
         </ownedEnd>
         <ownedEnd xmi:id="_06AYkCIwEemfI8RyT9hO8w" name="iEtatChTexts" type="_6rNw8CIqEemfI8RyT9hO8w" aggregation="composite" association="_05_xgCIwEemfI8RyT9hO8w">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_06AYkSIwEemfI8RyT9hO8w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_06AYkSIwEemfI8RyT9hO8w" value="4"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_06AYkiIwEemfI8RyT9hO8w" value="4"/>
         </ownedEnd>
       </packagedElement>
@@ -230,7 +249,42 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_tT45kCIhEemfI8RyT9hO8w" name="ConvertisseurEuroDollar" visibility="public"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_8i_gACIsEemfI8RyT9hO8w" name="panneaucmd">
-      <packagedElement xmi:type="uml:Package" xmi:id="_LdM1gCItEemfI8RyT9hO8w" name="automate"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_LdM1gCItEemfI8RyT9hO8w" name="automate">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_LcPp4CJGEemfI8RyT9hO8w" name="IEtatPanneau" visibility="public">
+          <ownedOperation xmi:id="_THUfMCJGEemfI8RyT9hO8w" name="vide"/>
+          <ownedOperation xmi:id="_UNsRYCJGEemfI8RyT9hO8w" name="pressButton"/>
+          <ownedOperation xmi:id="_VUaB0CJGEemfI8RyT9hO8w" name="euroDollar"/>
+          <ownedOperation xmi:id="_WZmvUCJGEemfI8RyT9hO8w" name="dollarEuro"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cIioECJGEemfI8RyT9hO8w" name="AbstractEtatPanneau" visibility="public" isAbstract="true">
+          <interfaceRealization xmi:id="_iqw-8CJGEemfI8RyT9hO8w" client="_cIioECJGEemfI8RyT9hO8w" supplier="_LcPp4CJGEemfI8RyT9hO8w" contract="_LcPp4CJGEemfI8RyT9hO8w"/>
+          <ownedOperation xmi:id="_tO8IUCJGEemfI8RyT9hO8w" name="AbstractEtatPanneau">
+            <ownedParameter xmi:id="_zpuacCJGEemfI8RyT9hO8w" name="pres" type="_ijsP8CItEemfI8RyT9hO8w"/>
+            <ownedParameter xmi:id="_zpuacSJGEemfI8RyT9hO8w" name="mod" type="_nm5rICItEemfI8RyT9hO8w"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_1vWqMCJGEemfI8RyT9hO8w" name="PanneauException" visibility="public"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Bcg04CJHEemfI8RyT9hO8w" name="EtatDisableButtonVide" visibility="public">
+          <generalization xmi:id="_YogaYCJHEemfI8RyT9hO8w" general="_cIioECJGEemfI8RyT9hO8w"/>
+          <ownedOperation xmi:id="_eVadYCJIEemfI8RyT9hO8w" name="euroDollar"/>
+          <ownedOperation xmi:id="_eVadYSJIEemfI8RyT9hO8w" name="dollarEuro"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FMREICJHEemfI8RyT9hO8w" name="EtatDollarEuroPanneau" visibility="public">
+          <generalization xmi:id="_Xr7dYCJHEemfI8RyT9hO8w" general="_cIioECJGEemfI8RyT9hO8w"/>
+          <ownedOperation xmi:id="_iy_b8CJIEemfI8RyT9hO8w" name="euroDollar"/>
+          <ownedOperation xmi:id="_izADACJIEemfI8RyT9hO8w" name="pressButton"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_IvcP8CJHEemfI8RyT9hO8w" name="EtatEuroDollarPanneau" visibility="public">
+          <generalization xmi:id="_ZRj-cCJHEemfI8RyT9hO8w" general="_cIioECJGEemfI8RyT9hO8w"/>
+          <ownedOperation xmi:id="_hy-JYCJIEemfI8RyT9hO8w" name="pressButton"/>
+          <ownedOperation xmi:id="_hy-JYSJIEemfI8RyT9hO8w" name="dollarEuro"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RQvioCJHEemfI8RyT9hO8w" name="EtatClickedButton" visibility="public">
+          <generalization xmi:id="_aKBQcCJHEemfI8RyT9hO8w" general="_cIioECJGEemfI8RyT9hO8w"/>
+          <ownedOperation xmi:id="_b_gV8CJIEemfI8RyT9hO8w" name="euroDollar"/>
+          <ownedOperation xmi:id="_b_gV8SJIEemfI8RyT9hO8w" name="dollarEuro"/>
+        </packagedElement>
+      </packagedElement>
       <packagedElement xmi:type="uml:Interface" xmi:id="_U2UhACItEemfI8RyT9hO8w" name="IVuePanneauCmd" visibility="public">
         <ownedOperation xmi:id="_vWB6ACItEemfI8RyT9hO8w" name="notifChangement">
           <ownedParameter xmi:id="_x-yE8CItEemfI8RyT9hO8w" name="changement">
@@ -278,6 +332,43 @@
         <ownedOperation xmi:id="_917YcCI1EemfI8RyT9hO8w" name="actionPress"/>
         <ownedOperation xmi:id="_DsS5cCI3EemfI8RyT9hO8w" name="actionChoose">
           <ownedParameter xmi:id="_GkBUgCI3EemfI8RyT9hO8w" name="mode EConvertisseur"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_7155ECJDEemfI8RyT9hO8w" name="getPresentationGlobal">
+          <ownedParameter xmi:id="_7155ESJDEemfI8RyT9hO8w" type="_jSGPECIiEemfI8RyT9hO8w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_716gICJDEemfI8RyT9hO8w" name="setPresentationGlobal">
+          <ownedParameter xmi:id="_716gISJDEemfI8RyT9hO8w" name="p" type="_jSGPECIiEemfI8RyT9hO8w"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_-1sD8CJDEemfI8RyT9hO8w" name="setEtatCourant">
+          <ownedParameter xmi:id="_-1sD8SJDEemfI8RyT9hO8w" name="e" type="_LcPp4CJGEemfI8RyT9hO8w"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_-1sD8iJDEemfI8RyT9hO8w" name="setVue">
+          <ownedParameter xmi:id="_-1sD8yJDEemfI8RyT9hO8w" name="v"/>
+          <ownedParameter xmi:id="_EhRw8CJIEemfI8RyT9hO8w" type="_U2UhACItEemfI8RyT9hO8w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_-1sD9CJDEemfI8RyT9hO8w" name="getEtatCourant">
+          <ownedParameter xmi:id="_-1sD9SJDEemfI8RyT9hO8w" type="_6rNw8CIqEemfI8RyT9hO8w" direction="return">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GO5wYCJIEemfI8RyT9hO8w" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GO5wYSJIEemfI8RyT9hO8w" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_-1sD9iJDEemfI8RyT9hO8w" name="getVue">
+          <ownedParameter xmi:id="_-1sD9yJDEemfI8RyT9hO8w" type="_qx5ogCIiEemfI8RyT9hO8w" direction="return">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HvVoYCJIEemfI8RyT9hO8w" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HvVoYSJIEemfI8RyT9hO8w" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_wSeVUCJHEemfI8RyT9hO8w" name="getEtatDisBtnVide">
+          <ownedParameter xmi:id="_JvgwYCJIEemfI8RyT9hO8w" type="_LcPp4CJGEemfI8RyT9hO8w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_KX8CUCJIEemfI8RyT9hO8w" name="getEtatEurroDollar">
+          <ownedParameter xmi:id="_Qjry4CJIEemfI8RyT9hO8w" type="_LcPp4CJGEemfI8RyT9hO8w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MnXuUCJIEemfI8RyT9hO8w" name="getEtatDollarEuro">
+          <ownedParameter xmi:id="_PnaX4CJIEemfI8RyT9hO8w" type="_LcPp4CJGEemfI8RyT9hO8w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ROjU0CJIEemfI8RyT9hO8w" name="getEtatClickedBtn">
+          <ownedParameter xmi:id="_ThH0YCJIEemfI8RyT9hO8w" type="_LcPp4CJGEemfI8RyT9hO8w" direction="return"/>
         </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_nm5rICItEemfI8RyT9hO8w" name="ModelPanneauCmd" visibility="public">
@@ -353,6 +444,16 @@
         <ownedEnd xmi:id="_z59ekSI1EemfI8RyT9hO8w" name="presenTationPanneauCmds" type="_ijsP8CItEemfI8RyT9hO8w" association="_z59ekCI1EemfI8RyT9hO8w">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z59ekiI1EemfI8RyT9hO8w"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z59ekyI1EemfI8RyT9hO8w" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_kuNA4CJHEemfI8RyT9hO8w" name="IEtats" memberEnd="_kuNA4SJHEemfI8RyT9hO8w _kuNn8SJHEemfI8RyT9hO8w" navigableOwnedEnd="_kuNn8SJHEemfI8RyT9hO8w">
+        <ownedEnd xmi:id="_kuNA4SJHEemfI8RyT9hO8w" name="presenTationPanneauCmds" type="_ijsP8CItEemfI8RyT9hO8w" association="_kuNA4CJHEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kuNA4iJHEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kuNn8CJHEemfI8RyT9hO8w" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_kuNn8SJHEemfI8RyT9hO8w" name="iEtatPanneaus" type="_LcPp4CJGEemfI8RyT9hO8w" aggregation="composite" association="_kuNA4CJHEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kuNn8iJHEemfI8RyT9hO8w" value="5"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kuNn8yJHEemfI8RyT9hO8w" value="5"/>
         </ownedEnd>
       </packagedElement>
     </packagedElement>
