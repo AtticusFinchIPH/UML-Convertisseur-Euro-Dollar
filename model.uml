@@ -53,6 +53,11 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4DFtlSIpEemfI8RyT9hO8w" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4DFtliIpEemfI8RyT9hO8w" value="1"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_cXhzlCJ4EemfI8RyT9hO8w" name="observers" type="_vfAssCJ2EemfI8RyT9hO8w" association="_cXhzkCJ4EemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cXhzlSJ4EemfI8RyT9hO8w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cXhzliJ4EemfI8RyT9hO8w" value="*"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_ildGsCJ-EemfI8RyT9hO8w" client="_H9bukCIjEemfI8RyT9hO8w" supplier="_3SsEYCJ2EemfI8RyT9hO8w" contract="_3SsEYCJ2EemfI8RyT9hO8w"/>
         <ownedOperation xmi:id="_jGwBECIqEemfI8RyT9hO8w" name="PresentationChamptextNum"/>
         <ownedOperation xmi:id="_mnHwgCIqEemfI8RyT9hO8w" name="actionTouche">
           <ownedParameter xmi:id="_qCedECIqEemfI8RyT9hO8w" name="txt">
@@ -85,11 +90,9 @@
         <ownedOperation xmi:id="_hU2hcCIxEemfI8RyT9hO8w" name="getEtatEditableVide">
           <ownedParameter xmi:id="_kt6vACIxEemfI8RyT9hO8w" type="_6rNw8CIqEemfI8RyT9hO8w" direction="return"/>
         </ownedOperation>
-        <ownedOperation xmi:id="_fXEg8CJDEemfI8RyT9hO8w" name="setPresentationGlobal">
-          <ownedParameter xmi:id="_inDD8CJDEemfI8RyT9hO8w" name="p" type="_jSGPECIiEemfI8RyT9hO8w"/>
-        </ownedOperation>
-        <ownedOperation xmi:id="_kHdt0CJDEemfI8RyT9hO8w" name="getPresentationGlobal">
-          <ownedParameter xmi:id="_nrIo4CJDEemfI8RyT9hO8w" type="_jSGPECIiEemfI8RyT9hO8w" direction="return"/>
+        <ownedOperation xmi:id="_YGWSQCJ4EemfI8RyT9hO8w" name="notifAllObservers"/>
+        <ownedOperation xmi:id="_YGWSQSJ4EemfI8RyT9hO8w" name="attach">
+          <ownedParameter xmi:id="_YGWSQiJ4EemfI8RyT9hO8w" name="observer" type="_vfAssCJ2EemfI8RyT9hO8w"/>
         </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_OWNOgCIjEemfI8RyT9hO8w" name="mapres" memberEnd="_OWNOgSIjEemfI8RyT9hO8w _OWNOhCIjEemfI8RyT9hO8w">
@@ -200,13 +203,36 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_06AYkiIwEemfI8RyT9hO8w" value="4"/>
         </ownedEnd>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cXhzkCJ4EemfI8RyT9hO8w" name="observers" memberEnd="_cXhzkSJ4EemfI8RyT9hO8w _cXhzlCJ4EemfI8RyT9hO8w">
+        <ownedEnd xmi:id="_cXhzkSJ4EemfI8RyT9hO8w" name="presentationChampTextNums" type="_H9bukCIjEemfI8RyT9hO8w" association="_cXhzkCJ4EemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cXhzkiJ4EemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cXhzkyJ4EemfI8RyT9hO8w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_gLPakCIcEemfI8RyT9hO8w" name="globalconvertisseur">
       <packagedElement xmi:type="uml:Class" xmi:id="_Nf-mkCIiEemfI8RyT9hO8w" name="VueGlobal" visibility="public"/>
       <packagedElement xmi:type="uml:Interface" xmi:id="_TJRKUCIiEemfI8RyT9hO8w" name="IVueGlobal" visibility="public"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_VFg0kCIiEemfI8RyT9hO8w" name="ModalGlobal" visibility="public"/>
       <packagedElement xmi:type="uml:Package" xmi:id="_YTNfoCIiEemfI8RyT9hO8w" name="automate"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_jSGPECIiEemfI8RyT9hO8w" name="PresentationGlobal" visibility="public"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_jSGPECIiEemfI8RyT9hO8w" name="PresentationGlobal" visibility="public">
+        <ownedAttribute xmi:id="_l_sntCJ4EemfI8RyT9hO8w" name="observers" type="_3SsEYCJ2EemfI8RyT9hO8w" association="_l_snsCJ4EemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l_sntSJ4EemfI8RyT9hO8w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l_sntiJ4EemfI8RyT9hO8w" value="*"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_dqawECJ-EemfI8RyT9hO8w" client="_jSGPECIiEemfI8RyT9hO8w" supplier="_0JcbgCJ2EemfI8RyT9hO8w" contract="_0JcbgCJ2EemfI8RyT9hO8w"/>
+        <interfaceRealization xmi:id="_euajsCJ-EemfI8RyT9hO8w" client="_jSGPECIiEemfI8RyT9hO8w" supplier="_vfAssCJ2EemfI8RyT9hO8w" contract="_vfAssCJ2EemfI8RyT9hO8w"/>
+        <ownedOperation xmi:id="_8GanMCJ4EemfI8RyT9hO8w" name="notifAllObservers"/>
+        <ownedOperation xmi:id="_8GbOQCJ4EemfI8RyT9hO8w" name="attach">
+          <ownedParameter xmi:id="_8GbOQSJ4EemfI8RyT9hO8w" name="observer" type="_3SsEYCJ2EemfI8RyT9hO8w"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_l_snsCJ4EemfI8RyT9hO8w" name="observers" memberEnd="_l_snsSJ4EemfI8RyT9hO8w _l_sntCJ4EemfI8RyT9hO8w">
+        <ownedEnd xmi:id="_l_snsSJ4EemfI8RyT9hO8w" name="presentationGlobals" type="_jSGPECIiEemfI8RyT9hO8w" association="_l_snsCJ4EemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l_snsiJ4EemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l_snsyJ4EemfI8RyT9hO8w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_KKnmkCIdEemfI8RyT9hO8w" name="Conversion" visibility="public">
       <ownedAttribute xmi:id="_Q9yjgCIdEemfI8RyT9hO8w" name="eurodollarrate" visibility="private">
@@ -328,16 +354,15 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z59elSI1EemfI8RyT9hO8w" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z59eliI1EemfI8RyT9hO8w" value="1"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_Lm6LhCJ3EemfI8RyT9hO8w" name="observers" type="_0JcbgCJ2EemfI8RyT9hO8w" association="_Lm6LgCJ3EemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lm6LhSJ3EemfI8RyT9hO8w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lm6LhiJ3EemfI8RyT9hO8w" value="*"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_g_UPUCJ-EemfI8RyT9hO8w" client="_ijsP8CItEemfI8RyT9hO8w" supplier="_3SsEYCJ2EemfI8RyT9hO8w" contract="_3SsEYCJ2EemfI8RyT9hO8w"/>
         <ownedOperation xmi:id="_6yPlACI1EemfI8RyT9hO8w" name="PresentationPanneauCmd"/>
         <ownedOperation xmi:id="_917YcCI1EemfI8RyT9hO8w" name="actionPress"/>
         <ownedOperation xmi:id="_DsS5cCI3EemfI8RyT9hO8w" name="actionChoose">
           <ownedParameter xmi:id="_GkBUgCI3EemfI8RyT9hO8w" name="mode EConvertisseur"/>
-        </ownedOperation>
-        <ownedOperation xmi:id="_7155ECJDEemfI8RyT9hO8w" name="getPresentationGlobal">
-          <ownedParameter xmi:id="_7155ESJDEemfI8RyT9hO8w" type="_jSGPECIiEemfI8RyT9hO8w" direction="return"/>
-        </ownedOperation>
-        <ownedOperation xmi:id="_716gICJDEemfI8RyT9hO8w" name="setPresentationGlobal">
-          <ownedParameter xmi:id="_716gISJDEemfI8RyT9hO8w" name="p" type="_jSGPECIiEemfI8RyT9hO8w"/>
         </ownedOperation>
         <ownedOperation xmi:id="_-1sD8CJDEemfI8RyT9hO8w" name="setEtatCourant">
           <ownedParameter xmi:id="_-1sD8SJDEemfI8RyT9hO8w" name="e" type="_LcPp4CJGEemfI8RyT9hO8w"/>
@@ -370,6 +395,10 @@
         <ownedOperation xmi:id="_ROjU0CJIEemfI8RyT9hO8w" name="getEtatClickedBtn">
           <ownedParameter xmi:id="_ThH0YCJIEemfI8RyT9hO8w" type="_LcPp4CJGEemfI8RyT9hO8w" direction="return"/>
         </ownedOperation>
+        <ownedOperation xmi:id="_jGEkoCJ3EemfI8RyT9hO8w" name="attach">
+          <ownedParameter xmi:id="_ngW-oCJ3EemfI8RyT9hO8w" name="observer" type="_0JcbgCJ2EemfI8RyT9hO8w"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_sAXmICJ3EemfI8RyT9hO8w" name="notifAllObservers"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_nm5rICItEemfI8RyT9hO8w" name="ModelPanneauCmd" visibility="public">
         <ownedAttribute xmi:id="_rjgOIyIuEemfI8RyT9hO8w" name="currentMode" type="_VGqNoCIuEemfI8RyT9hO8w" aggregation="composite" association="_rjfnECIuEemfI8RyT9hO8w">
@@ -455,6 +484,32 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kuNn8iJHEemfI8RyT9hO8w" value="5"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kuNn8yJHEemfI8RyT9hO8w" value="5"/>
         </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Lm6LgCJ3EemfI8RyT9hO8w" name="observers" memberEnd="_Lm6LgSJ3EemfI8RyT9hO8w _Lm6LhCJ3EemfI8RyT9hO8w">
+        <ownedEnd xmi:id="_Lm6LgSJ3EemfI8RyT9hO8w" name="presenTationPanneauCmds" type="_ijsP8CItEemfI8RyT9hO8w" association="_Lm6LgCJ3EemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lm6LgiJ3EemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lm6LgyJ3EemfI8RyT9hO8w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_o0dgQCJ2EemfI8RyT9hO8w" name="iobservers">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_vfAssCJ2EemfI8RyT9hO8w" name="IObserverOfChpTxtNum" visibility="public">
+        <ownedOperation xmi:id="_7LUi0CJ2EemfI8RyT9hO8w" name="updateFromChpTxtNum"/>
+        <ownedOperation xmi:id="_RPdyoCJ7EemfI8RyT9hO8w" name="subscribeToChpTxtNum">
+          <ownedParameter xmi:id="_RACkoCJ9EemfI8RyT9hO8w" name="subject" type="_H9bukCIjEemfI8RyT9hO8w"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_0JcbgCJ2EemfI8RyT9hO8w" name="IObserverOfPanneau" visibility="public">
+        <ownedOperation xmi:id="_9cjloCJ2EemfI8RyT9hO8w" name="updateFromPanneau"/>
+        <ownedOperation xmi:id="_UsCAICJ7EemfI8RyT9hO8w" name="subscribeToPanneau">
+          <ownedParameter xmi:id="_N79voCJ9EemfI8RyT9hO8w" name="subject" type="_ijsP8CItEemfI8RyT9hO8w"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_3SsEYCJ2EemfI8RyT9hO8w" name="IObserverOfGlobal" visibility="public">
+        <ownedOperation xmi:id="__CfBoCJ2EemfI8RyT9hO8w" name="updateFromGlobal"/>
+        <ownedOperation xmi:id="_WNnHoCJ7EemfI8RyT9hO8w" name="subscribeToGlobal">
+          <ownedParameter xmi:id="_IGJy0CJ9EemfI8RyT9hO8w" name="subject" type="_jSGPECIiEemfI8RyT9hO8w"/>
+        </ownedOperation>
       </packagedElement>
     </packagedElement>
   </packagedElement>
