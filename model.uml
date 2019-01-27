@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Jj2tECITEemfI8RyT9hO8w" name="NewModel">
+  <packageImport xmi:id="_iqE_ECIdEemfI8RyT9hO8w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_uUIycCIdEemfI8RyT9hO8w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_w3yF0CIbEemfI8RyT9hO8w" name="application">
+    <packagedElement xmi:type="uml:Package" xmi:id="_adGzECIcEemfI8RyT9hO8w" name="chmptextenum">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_qx5ogCIiEemfI8RyT9hO8w" name="IVueChptxtNum" visibility="public">
+        <ownedOperation xmi:id="_vsWwUCIiEemfI8RyT9hO8w" name="notifValeur">
+          <ownedParameter xmi:id="_yaaSACIiEemfI8RyT9hO8w" name="val">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_zfPMECIiEemfI8RyT9hO8w" name="notifAccess">
+          <ownedParameter xmi:id="_1rOigCIiEemfI8RyT9hO8w" name="access">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7_cSkCIiEemfI8RyT9hO8w" name="VueChampTextNum" visibility="public">
+        <ownedAttribute xmi:id="_OWNOhCIjEemfI8RyT9hO8w" name="mapres" type="_H9bukCIjEemfI8RyT9hO8w" association="_OWNOgCIjEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OWNOhSIjEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OWNOhiIjEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_bKbdACIlEemfI8RyT9hO8w" name="labChT" visibility="private" type="_j0mX0CIlEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bKbdASIlEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bKcEECIlEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_lhk3ACIlEemfI8RyT9hO8w" name="txtF" visibility="private" type="_pJTysCIlEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lhleECIlEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lhmFICIlEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_z8O0oCIjEemfI8RyT9hO8w" client="_7_cSkCIiEemfI8RyT9hO8w" supplier="_qx5ogCIiEemfI8RyT9hO8w" contract="_qx5ogCIiEemfI8RyT9hO8w"/>
+        <ownedOperation xmi:id="_d_eiECImEemfI8RyT9hO8w" name="VueChampTextNum">
+          <ownedParameter xmi:id="_jaPhoCImEemfI8RyT9hO8w" name="pres" type="_H9bukCIjEemfI8RyT9hO8w"/>
+          <ownedParameter xmi:id="_xaB2QCImEemfI8RyT9hO8w" name="lab">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ybX-gCImEemfI8RyT9hO8w" name="handle">
+          <ownedParameter xmi:id="_2JcywCImEemfI8RyT9hO8w" name="event"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_H9bukCIjEemfI8RyT9hO8w" name="PresentationChampTextNum" visibility="public">
+        <ownedAttribute xmi:id="_h2gzJCIoEemfI8RyT9hO8w" name="lavue" type="_qx5ogCIiEemfI8RyT9hO8w" association="_h2gzICIoEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h2gzJSIoEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h2gzJiIoEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_4DFtlCIpEemfI8RyT9hO8w" name="lemodel" type="_FasPkCIkEemfI8RyT9hO8w" association="_4DFtkCIpEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4DFtlSIpEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4DFtliIpEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_jGwBECIqEemfI8RyT9hO8w" name="PresentationChamptextNum"/>
+        <ownedOperation xmi:id="_mnHwgCIqEemfI8RyT9hO8w" name="actionTouche">
+          <ownedParameter xmi:id="_qCedECIqEemfI8RyT9hO8w" name="txt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_quLsgCIqEemfI8RyT9hO8w" name="setEditable">
+          <ownedParameter xmi:id="_uL1fICIqEemfI8RyT9hO8w" name="edit">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Fil7cCIxEemfI8RyT9hO8w" name="setVue">
+          <ownedParameter xmi:id="_JKi5kCIxEemfI8RyT9hO8w" name="v" type="_qx5ogCIiEemfI8RyT9hO8w"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_KgNE8CIxEemfI8RyT9hO8w" name="getVue">
+          <ownedParameter xmi:id="_NVLuACIxEemfI8RyT9hO8w" type="_qx5ogCIiEemfI8RyT9hO8w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Or7egCIxEemfI8RyT9hO8w" name="setEtatCourant">
+          <ownedParameter xmi:id="_SgJ-ECIxEemfI8RyT9hO8w" name="e" type="_6rNw8CIqEemfI8RyT9hO8w"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VARxcCIxEemfI8RyT9hO8w" name="getEtatCourant">
+          <ownedParameter xmi:id="_YHpLACIxEemfI8RyT9hO8w" type="_6rNw8CIqEemfI8RyT9hO8w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Yp5jgCIxEemfI8RyT9hO8w" name="getEtatNonEditable">
+          <ownedParameter xmi:id="_cvguACIxEemfI8RyT9hO8w" type="_6rNw8CIqEemfI8RyT9hO8w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_dnSDgCIxEemfI8RyT9hO8w" name="getEtatEditable">
+          <ownedParameter xmi:id="_g4jnACIxEemfI8RyT9hO8w" type="_6rNw8CIqEemfI8RyT9hO8w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_hU2hcCIxEemfI8RyT9hO8w" name="getEtatEditableVide">
+          <ownedParameter xmi:id="_kt6vACIxEemfI8RyT9hO8w" type="_6rNw8CIqEemfI8RyT9hO8w" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_OWNOgCIjEemfI8RyT9hO8w" name="mapres" memberEnd="_OWNOgSIjEemfI8RyT9hO8w _OWNOhCIjEemfI8RyT9hO8w">
+        <ownedEnd xmi:id="_OWNOgSIjEemfI8RyT9hO8w" name="vueChampTextNums" type="_7_cSkCIiEemfI8RyT9hO8w" association="_OWNOgCIjEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OWNOgiIjEemfI8RyT9hO8w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OWNOgyIjEemfI8RyT9hO8w" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FasPkCIkEemfI8RyT9hO8w" name="ModelChamptextNum" visibility="public">
+        <ownedAttribute xmi:id="_K2WnACIkEemfI8RyT9hO8w" name="valChamp" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K2WnASIkEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K2WnAiIkEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_N-W5wCIkEemfI8RyT9hO8w" name="accessible" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N-W5wSIkEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N-W5wiIkEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_hGiEgCIkEemfI8RyT9hO8w" name="ModelChampTextNum"/>
+        <ownedOperation xmi:id="_kwX5ACIkEemfI8RyT9hO8w" name="getValChamp">
+          <ownedParameter xmi:id="_ni5D8CIkEemfI8RyT9hO8w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ohidgCIkEemfI8RyT9hO8w" name="setValChamp">
+          <ownedParameter xmi:id="_r8-CkCIkEemfI8RyT9hO8w" name="v">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_r9C7ECIkEemfI8RyT9hO8w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_w2OQgCIkEemfI8RyT9hO8w" name="getAccessible">
+          <ownedParameter xmi:id="_066N8CIkEemfI8RyT9hO8w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_1eUdACIkEemfI8RyT9hO8w" name="setAccessible">
+          <ownedParameter xmi:id="_39sCcCIkEemfI8RyT9hO8w" name="b">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_j0mX0CIlEemfI8RyT9hO8w" name="Label "/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_pJTysCIlEemfI8RyT9hO8w" name="TextField "/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_h2gzICIoEemfI8RyT9hO8w" name="vuePanneau" memberEnd="_h2gzISIoEemfI8RyT9hO8w _h2gzJCIoEemfI8RyT9hO8w">
+        <ownedEnd xmi:id="_h2gzISIoEemfI8RyT9hO8w" name="presentationChampTextNums" type="_H9bukCIjEemfI8RyT9hO8w" association="_h2gzICIoEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h2gzIiIoEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h2gzIyIoEemfI8RyT9hO8w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_4DFtkCIpEemfI8RyT9hO8w" name="model" memberEnd="_4DFtkSIpEemfI8RyT9hO8w _4DFtlCIpEemfI8RyT9hO8w">
+        <ownedEnd xmi:id="_4DFtkSIpEemfI8RyT9hO8w" name="presentationChampTextNums" type="_H9bukCIjEemfI8RyT9hO8w" association="_4DFtkCIpEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4DFtkiIpEemfI8RyT9hO8w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4DFtkyIpEemfI8RyT9hO8w" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_z397gCIqEemfI8RyT9hO8w" name="automate">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_6rNw8CIqEemfI8RyT9hO8w" name="IEtatChText" visibility="public">
+          <ownedOperation xmi:id="__239gCIqEemfI8RyT9hO8w" name="touche">
+            <ownedParameter xmi:id="_IbMvACIrEemfI8RyT9hO8w" name="txt">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_BeVDgCIrEemfI8RyT9hO8w" name="champVide"/>
+          <ownedOperation xmi:id="_CzoCgCIrEemfI8RyT9hO8w" name="editable"/>
+          <ownedOperation xmi:id="_EncJgCIrEemfI8RyT9hO8w" name="nonEditable"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_40bZACIrEemfI8RyT9hO8w" name="AbstractEtatChText" visibility="public" isAbstract="true">
+          <interfaceRealization xmi:id="_-5nOkCIrEemfI8RyT9hO8w" client="_40bZACIrEemfI8RyT9hO8w" supplier="_6rNw8CIqEemfI8RyT9hO8w" contract="_6rNw8CIqEemfI8RyT9hO8w"/>
+          <ownedOperation xmi:id="_NG3-gCIsEemfI8RyT9hO8w" name="AbstractEtatChText">
+            <ownedParameter xmi:id="_T7GEUCIsEemfI8RyT9hO8w" name="pres" type="_H9bukCIjEemfI8RyT9hO8w"/>
+            <ownedParameter xmi:id="_XQTFkCIsEemfI8RyT9hO8w" name="mod" type="_FasPkCIkEemfI8RyT9hO8w"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Zxa-gCIsEemfI8RyT9hO8w" name="ChTextException" visibility="public"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f7Z0gCIsEemfI8RyT9hO8w" name="EtatEditableVide" visibility="public">
+          <generalization xmi:id="_pudC8CIsEemfI8RyT9hO8w" general="_40bZACIrEemfI8RyT9hO8w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jhg_kCIsEemfI8RyT9hO8w" name="EtatEdiatable" visibility="public">
+          <generalization xmi:id="_qRoogCIsEemfI8RyT9hO8w" general="_40bZACIrEemfI8RyT9hO8w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_lHISgCIsEemfI8RyT9hO8w" name="EtatNonEditable" visibility="public">
+          <generalization xmi:id="_zCZ6kCIsEemfI8RyT9hO8w" general="_40bZACIrEemfI8RyT9hO8w"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_05_xgCIwEemfI8RyT9hO8w" name="IEtats" memberEnd="_05_xgSIwEemfI8RyT9hO8w _06AYkCIwEemfI8RyT9hO8w" navigableOwnedEnd="_06AYkCIwEemfI8RyT9hO8w">
+        <ownedEnd xmi:id="_05_xgSIwEemfI8RyT9hO8w" name="presentationChampTextNums" type="_H9bukCIjEemfI8RyT9hO8w" association="_05_xgCIwEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_05_xgiIwEemfI8RyT9hO8w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_05_xgyIwEemfI8RyT9hO8w" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_06AYkCIwEemfI8RyT9hO8w" name="iEtatChTexts" type="_6rNw8CIqEemfI8RyT9hO8w" aggregation="composite" association="_05_xgCIwEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_06AYkSIwEemfI8RyT9hO8w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_06AYkiIwEemfI8RyT9hO8w" value="4"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_gLPakCIcEemfI8RyT9hO8w" name="globalconvertisseur">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Nf-mkCIiEemfI8RyT9hO8w" name="VueGlobal" visibility="public"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_TJRKUCIiEemfI8RyT9hO8w" name="IVueGlobal" visibility="public"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VFg0kCIiEemfI8RyT9hO8w" name="ModalGlobal" visibility="public"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_YTNfoCIiEemfI8RyT9hO8w" name="automate"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_jSGPECIiEemfI8RyT9hO8w" name="PresentationGlobal" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KKnmkCIdEemfI8RyT9hO8w" name="Conversion" visibility="public">
+      <ownedAttribute xmi:id="_Q9yjgCIdEemfI8RyT9hO8w" name="eurodollarrate" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q94qICIdEemfI8RyT9hO8w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q9-wwCIdEemfI8RyT9hO8w" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_HwqQICIeEemfI8RyT9hO8w" name="Conversion"/>
+      <ownedOperation xmi:id="_J5mSkCIeEemfI8RyT9hO8w" name="Conversion">
+        <ownedParameter xmi:id="_N3qqoCIeEemfI8RyT9hO8w" name="newexchangerate">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_wIjPACIgEemfI8RyT9hO8w" name="setEuDoRate">
+        <ownedParameter xmi:id="_cpO6ICIhEemfI8RyT9hO8w" name="newexchangerate">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_z-JnkCIgEemfI8RyT9hO8w" name="getEuDoRate">
+        <ownedParameter xmi:id="_eHvfgCIhEemfI8RyT9hO8w" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_g4d7ZiIhEemfI8RyT9hO8w" name="euroToDollar">
+        <ownedParameter xmi:id="_kr4h8CIhEemfI8RyT9hO8w" name="euro">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_kr-BgCIhEemfI8RyT9hO8w" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_lQSPgCIhEemfI8RyT9hO8w" name="dollarToEuro">
+        <ownedParameter xmi:id="_o3JogCIhEemfI8RyT9hO8w" name="dollar">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_o3OhACIhEemfI8RyT9hO8w" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_tT45kCIhEemfI8RyT9hO8w" name="ConvertisseurEuroDollar" visibility="public"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_8i_gACIsEemfI8RyT9hO8w" name="panneaucmd">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LdM1gCItEemfI8RyT9hO8w" name="automate"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_U2UhACItEemfI8RyT9hO8w" name="IVuePanneauCmd" visibility="public">
+        <ownedOperation xmi:id="_vWB6ACItEemfI8RyT9hO8w" name="notifChangement">
+          <ownedParameter xmi:id="_x-yE8CItEemfI8RyT9hO8w" name="changement">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ykyVACItEemfI8RyT9hO8w" name="notifPressableButton">
+          <ownedParameter xmi:id="_1u-ZECItEemfI8RyT9hO8w" name="pressable">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bwAVoCItEemfI8RyT9hO8w" name="VuePanneauCmd" visibility="public">
+        <ownedAttribute xmi:id="_5cellCItEemfI8RyT9hO8w" name="presPanneau" type="_ijsP8CItEemfI8RyT9hO8w" association="_5celkCItEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5cellSItEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5celliItEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_A8beFCIwEemfI8RyT9hO8w" name="IVue" type="_VGqNoCIuEemfI8RyT9hO8w" association="_A8beECIwEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A8beFSIwEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A8beFiIwEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_K38E8CIwEemfI8RyT9hO8w" name="comboConvert" visibility="private" type="_O6oeUCIwEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K38sACIwEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K38sASIwEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_PwIi8CIwEemfI8RyT9hO8w" name="btnConvert" visibility="private" type="_TMFscCIwEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PwIi8SIwEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PwJKACIwEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_eSHGACItEemfI8RyT9hO8w" client="_bwAVoCItEemfI8RyT9hO8w" supplier="_U2UhACItEemfI8RyT9hO8w" contract="_U2UhACItEemfI8RyT9hO8w"/>
+        <ownedOperation xmi:id="_XPzZgCIwEemfI8RyT9hO8w" name="VuePanneauCmd">
+          <ownedParameter xmi:id="_a_YCkCIwEemfI8RyT9hO8w" name="pres" type="_ijsP8CItEemfI8RyT9hO8w"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ijsP8CItEemfI8RyT9hO8w" name="PresenTationPanneauCmd" visibility="public">
+        <ownedAttribute xmi:id="_UFFfFCIyEemfI8RyT9hO8w" name="vuePanneau" type="_U2UhACItEemfI8RyT9hO8w" association="_UFFfECIyEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UFFfFSIyEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UFFfFiIyEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_z59elCI1EemfI8RyT9hO8w" name="modelPanneau" type="_nm5rICItEemfI8RyT9hO8w" association="_z59ekCI1EemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z59elSI1EemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z59eliI1EemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_6yPlACI1EemfI8RyT9hO8w" name="PresentationPanneauCmd"/>
+        <ownedOperation xmi:id="_917YcCI1EemfI8RyT9hO8w" name="actionPress"/>
+        <ownedOperation xmi:id="_DsS5cCI3EemfI8RyT9hO8w" name="actionChoose">
+          <ownedParameter xmi:id="_GkBUgCI3EemfI8RyT9hO8w" name="mode EConvertisseur"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nm5rICItEemfI8RyT9hO8w" name="ModelPanneauCmd" visibility="public">
+        <ownedAttribute xmi:id="_rjgOIyIuEemfI8RyT9hO8w" name="currentMode" type="_VGqNoCIuEemfI8RyT9hO8w" aggregation="composite" association="_rjfnECIuEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rjgOJCIuEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rjgOJSIuEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_CdnZcCIvEemfI8RyT9hO8w" name="pressableBtn" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CdoAgCIvEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CdoAgSIvEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_KG-XgCIvEemfI8RyT9hO8w" name="ModelPanneauCmd"/>
+        <ownedOperation xmi:id="_MixEgCIvEemfI8RyT9hO8w" name="getMode">
+          <ownedParameter xmi:id="_SZEJgCIvEemfI8RyT9hO8w" type="_VGqNoCIuEemfI8RyT9hO8w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_TOsJ8CIvEemfI8RyT9hO8w" name="setMode">
+          <ownedParameter xmi:id="_VNwesCIvEemfI8RyT9hO8w" name="mode">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_YKy3kCIvEemfI8RyT9hO8w" name="getPressableButton">
+          <ownedParameter xmi:id="_bNP78CIvEemfI8RyT9hO8w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_b-nugCIvEemfI8RyT9hO8w" name="setpressableButton">
+          <ownedParameter xmi:id="_f5AgcCIvEemfI8RyT9hO8w" name="b">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_5celkCItEemfI8RyT9hO8w" name="presPanneau" memberEnd="_5celkSItEemfI8RyT9hO8w _5cellCItEemfI8RyT9hO8w">
+        <ownedEnd xmi:id="_5celkSItEemfI8RyT9hO8w" name="vuePanneauCmds" type="_bwAVoCItEemfI8RyT9hO8w" association="_5celkCItEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5celkiItEemfI8RyT9hO8w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5celkyItEemfI8RyT9hO8w" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_VGqNoCIuEemfI8RyT9hO8w" name="EConvertibleMode" visibility="public">
+        <ownedAttribute xmi:id="_gTMXgCIuEemfI8RyT9hO8w" name="nameMode" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gTMXgSIuEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gTM-kCIuEemfI8RyT9hO8w" value="1"/>
+        </ownedAttribute>
+        <ownedLiteral xmi:id="_Z4gMACIuEemfI8RyT9hO8w" name="EuDo">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_Z4gMASIuEemfI8RyT9hO8w"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_eTd7cCIuEemfI8RyT9hO8w" name="DoEu">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_eTeigCIuEemfI8RyT9hO8w" value="1"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_rjfnECIuEemfI8RyT9hO8w" name="currentMode" memberEnd="_rjgOICIuEemfI8RyT9hO8w _rjgOIyIuEemfI8RyT9hO8w">
+        <ownedEnd xmi:id="_rjgOICIuEemfI8RyT9hO8w" name="modelPanneauCmds" type="_nm5rICItEemfI8RyT9hO8w" association="_rjfnECIuEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rjgOISIuEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rjgOIiIuEemfI8RyT9hO8w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_A8beECIwEemfI8RyT9hO8w" name="mode" memberEnd="_A8beESIwEemfI8RyT9hO8w _A8beFCIwEemfI8RyT9hO8w">
+        <ownedEnd xmi:id="_A8beESIwEemfI8RyT9hO8w" name="vuePanneauCmds" type="_bwAVoCItEemfI8RyT9hO8w" association="_A8beECIwEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A8beEiIwEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A8beEyIwEemfI8RyT9hO8w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_O6oeUCIwEemfI8RyT9hO8w" name="CommboBox "/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_TMFscCIwEemfI8RyT9hO8w" name="Button "/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UFFfECIyEemfI8RyT9hO8w" name="modelPanneau" memberEnd="_UFFfESIyEemfI8RyT9hO8w _UFFfFCIyEemfI8RyT9hO8w">
+        <ownedEnd xmi:id="_UFFfESIyEemfI8RyT9hO8w" name="presenTationPanneauCmds" type="_ijsP8CItEemfI8RyT9hO8w" association="_UFFfECIyEemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UFFfEiIyEemfI8RyT9hO8w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UFFfEyIyEemfI8RyT9hO8w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_z59ekCI1EemfI8RyT9hO8w" name="model" memberEnd="_z59ekSI1EemfI8RyT9hO8w _z59elCI1EemfI8RyT9hO8w">
+        <ownedEnd xmi:id="_z59ekSI1EemfI8RyT9hO8w" name="presenTationPanneauCmds" type="_ijsP8CItEemfI8RyT9hO8w" association="_z59ekCI1EemfI8RyT9hO8w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z59ekiI1EemfI8RyT9hO8w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z59ekyI1EemfI8RyT9hO8w" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
