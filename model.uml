@@ -211,14 +211,133 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_gLPakCIcEemfI8RyT9hO8w" name="globalconvertisseur">
-      <packagedElement xmi:type="uml:Class" xmi:id="_Nf-mkCIiEemfI8RyT9hO8w" name="VueGlobal" visibility="public"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Nf-mkCIiEemfI8RyT9hO8w" name="VueGlobal" visibility="public">
+        <ownedAttribute xmi:id="_uG8dpCTTEemEhp9TsvCH5A" name="presentationGlobals" type="_jSGPECIiEemfI8RyT9hO8w" association="_uG8doCTTEemEhp9TsvCH5A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uG8dpSTTEemEhp9TsvCH5A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uG8dpiTTEemEhp9TsvCH5A" value="1"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_LQ3aICTUEemEhp9TsvCH5A" client="_Nf-mkCIiEemfI8RyT9hO8w" supplier="_TJRKUCIiEemfI8RyT9hO8w" contract="_TJRKUCIiEemfI8RyT9hO8w"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:Interface" xmi:id="_TJRKUCIiEemfI8RyT9hO8w" name="IVueGlobal" visibility="public"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_VFg0kCIiEemfI8RyT9hO8w" name="ModalGlobal" visibility="public"/>
-      <packagedElement xmi:type="uml:Package" xmi:id="_YTNfoCIiEemfI8RyT9hO8w" name="automate"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VFg0kCIiEemfI8RyT9hO8w" name="ModelGlobal" visibility="public">
+        <ownedAttribute xmi:id="_D-YOgCTVEemEhp9TsvCH5A" name="input" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D-YOgSTVEemEhp9TsvCH5A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D-YOgiTVEemEhp9TsvCH5A" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_IjMdgCTVEemEhp9TsvCH5A" name="output" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IjNEkCTVEemEhp9TsvCH5A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IjNEkSTVEemEhp9TsvCH5A" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_KgAvgCTVEemEhp9TsvCH5A" name="mode" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KgBWkCTVEemEhp9TsvCH5A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KgBWkSTVEemEhp9TsvCH5A" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_UtnzACTVEemEhp9TsvCH5A" name="ModelGlobal"/>
+        <ownedOperation xmi:id="_XAkGACTVEemEhp9TsvCH5A" name="getInput">
+          <ownedParameter xmi:id="_Z9l30CTVEemEhp9TsvCH5A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_adb1gCTVEemEhp9TsvCH5A" name="setInput">
+          <ownedParameter xmi:id="_daxJUCTVEemEhp9TsvCH5A" name="input">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_eUoJgCTVEemEhp9TsvCH5A" name="getMode">
+          <ownedParameter xmi:id="_f8jJkCTVEemEhp9TsvCH5A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_giJxACTVEemEhp9TsvCH5A" name="setMode">
+          <ownedParameter xmi:id="_imjRsCTVEemEhp9TsvCH5A" name="mode">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_jlKPACTVEemEhp9TsvCH5A" name="getOutput">
+          <ownedParameter xmi:id="_odpA4CTVEemEhp9TsvCH5A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_YTNfoCIiEemfI8RyT9hO8w" name="automate">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_fHy6kCTPEemEhp9TsvCH5A" name="IEtatGlobal" visibility="public">
+          <ownedOperation xmi:id="_nQqNMCTREemEhp9TsvCH5A" name="fillText">
+            <ownedParameter xmi:id="_qg9gUCTREemEhp9TsvCH5A" name="txt">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_tWpUACTREemEhp9TsvCH5A" name="chooseCombo">
+            <ownedParameter xmi:id="_whvXACTREemEhp9TsvCH5A" name="mode">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_i8y2MCTPEemEhp9TsvCH5A" name="AbstractEtatGlobal" visibility="public" isAbstract="true">
+          <interfaceRealization xmi:id="_Hm5KICTREemEhp9TsvCH5A" client="_i8y2MCTPEemEhp9TsvCH5A" supplier="_fHy6kCTPEemEhp9TsvCH5A" contract="_fHy6kCTPEemEhp9TsvCH5A"/>
+          <ownedOperation xmi:id="_4SldICTREemEhp9TsvCH5A" name="AbstractEtatGlobal">
+            <ownedParameter xmi:id="_4SldISTREemEhp9TsvCH5A" name="pres" type="_jSGPECIiEemfI8RyT9hO8w"/>
+            <ownedParameter xmi:id="_4SldIiTREemEhp9TsvCH5A" name="mod"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vnsbgCTPEemEhp9TsvCH5A" name="GlobalException" visibility="public"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_J6SJECTREemEhp9TsvCH5A" name="EtatNoInputNoMode" visibility="public">
+          <generalization xmi:id="_jOFIkCTREemEhp9TsvCH5A" general="_i8y2MCTPEemEhp9TsvCH5A"/>
+          <ownedOperation xmi:id="_HYwyECTSEemEhp9TsvCH5A" name="chooseCombo">
+            <ownedParameter xmi:id="_HYwyESTSEemEhp9TsvCH5A" name="mode">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_HYwyEiTSEemEhp9TsvCH5A" name="fillText">
+            <ownedParameter xmi:id="_HYwyEyTSEemEhp9TsvCH5A" name="txt">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_PPvx4CTREemEhp9TsvCH5A" name="EtatNoInputYesMode" visibility="public">
+          <generalization xmi:id="_inQZICTREemEhp9TsvCH5A" general="_i8y2MCTPEemEhp9TsvCH5A"/>
+          <ownedOperation xmi:id="_JhfZICTSEemEhp9TsvCH5A" name="fillText">
+            <ownedParameter xmi:id="_JhfZISTSEemEhp9TsvCH5A" name="txt">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RtaHICTREemEhp9TsvCH5A" name="EtatYesInputNoMode" visibility="public">
+          <generalization xmi:id="_hIG6kCTREemEhp9TsvCH5A" general="_i8y2MCTPEemEhp9TsvCH5A"/>
+          <ownedOperation xmi:id="_Kg5AoCTSEemEhp9TsvCH5A" name="chooseCombo">
+            <ownedParameter xmi:id="_Kg5AoSTSEemEhp9TsvCH5A" name="mode">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_VgCEMCTREemEhp9TsvCH5A" name="EtatYesInputYesMode" visibility="public">
+          <generalization xmi:id="_iA4VoCTREemEhp9TsvCH5A" general="_i8y2MCTPEemEhp9TsvCH5A"/>
+          <ownedOperation xmi:id="_Ll3rsCTSEemEhp9TsvCH5A" name="chooseCombo">
+            <ownedParameter xmi:id="_Ll3rsSTSEemEhp9TsvCH5A" name="mode">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Ll3rsiTSEemEhp9TsvCH5A" name="fillText">
+            <ownedParameter xmi:id="_Ll3rsyTSEemEhp9TsvCH5A" name="txt">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_jSGPECIiEemfI8RyT9hO8w" name="PresentationGlobal" visibility="public">
         <ownedAttribute xmi:id="_l_sntCJ4EemfI8RyT9hO8w" name="observers" type="_3SsEYCJ2EemfI8RyT9hO8w" association="_l_snsCJ4EemfI8RyT9hO8w">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l_sntSJ4EemfI8RyT9hO8w"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l_sntiJ4EemfI8RyT9hO8w" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_PaXRBCTSEemEhp9TsvCH5A" name="iEtatGlobals" type="_fHy6kCTPEemEhp9TsvCH5A" association="_PaXRACTSEemEhp9TsvCH5A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PaXRBSTSEemEhp9TsvCH5A" value="5"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PaXRBiTSEemEhp9TsvCH5A" value="5"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3P9QlCTTEemEhp9TsvCH5A" name="modelGlobals" type="_VFg0kCIiEemfI8RyT9hO8w" association="_3P9QkCTTEemEhp9TsvCH5A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3P9QlSTTEemEhp9TsvCH5A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3P9QliTTEemEhp9TsvCH5A" value="1"/>
         </ownedAttribute>
         <interfaceRealization xmi:id="_dqawECJ-EemfI8RyT9hO8w" client="_jSGPECIiEemfI8RyT9hO8w" supplier="_0JcbgCJ2EemfI8RyT9hO8w" contract="_0JcbgCJ2EemfI8RyT9hO8w"/>
         <interfaceRealization xmi:id="_euajsCJ-EemfI8RyT9hO8w" client="_jSGPECIiEemfI8RyT9hO8w" supplier="_vfAssCJ2EemfI8RyT9hO8w" contract="_vfAssCJ2EemfI8RyT9hO8w"/>
@@ -226,11 +345,76 @@
         <ownedOperation xmi:id="_8GbOQCJ4EemfI8RyT9hO8w" name="attach">
           <ownedParameter xmi:id="_8GbOQSJ4EemfI8RyT9hO8w" name="observer" type="_3SsEYCJ2EemfI8RyT9hO8w"/>
         </ownedOperation>
+        <ownedOperation xmi:id="_TPyYgCTUEemEhp9TsvCH5A" name="PresentationGlobal"/>
+        <ownedOperation xmi:id="_XNY2gCTUEemEhp9TsvCH5A" name="setVue">
+          <ownedParameter xmi:id="_Zu_QkCTUEemEhp9TsvCH5A" name="v" type="_TJRKUCIiEemfI8RyT9hO8w"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_aQPjgCTUEemEhp9TsvCH5A" name="getVue">
+          <ownedParameter xmi:id="_c5O_ACTUEemEhp9TsvCH5A" type="_TJRKUCIiEemfI8RyT9hO8w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_duaTgCTUEemEhp9TsvCH5A" name="getModel">
+          <ownedParameter xmi:id="_hi8VECTUEemEhp9TsvCH5A" type="_VFg0kCIiEemfI8RyT9hO8w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_jvivgCTUEemEhp9TsvCH5A" name="setEtatCourant">
+          <ownedParameter xmi:id="_pc8XMCTUEemEhp9TsvCH5A" name="e" type="_fHy6kCTPEemEhp9TsvCH5A"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_qGRBACTUEemEhp9TsvCH5A" name="getEtatCourant">
+          <ownedParameter xmi:id="_sJ33gCTUEemEhp9TsvCH5A" type="_fHy6kCTPEemEhp9TsvCH5A" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_sw73gCTUEemEhp9TsvCH5A" name="getEtatNoInputNoMode">
+          <ownedParameter xmi:id="_wvsMECTUEemEhp9TsvCH5A" type="_fHy6kCTPEemEhp9TsvCH5A" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_xdnpECTUEemEhp9TsvCH5A" name="getEtatNoInputYesMode">
+          <ownedParameter xmi:id="_xdnpESTUEemEhp9TsvCH5A" type="_fHy6kCTPEemEhp9TsvCH5A" direction="return">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yTe6ECTUEemEhp9TsvCH5A" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yTfhICTUEemEhp9TsvCH5A" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_y3pXECTUEemEhp9TsvCH5A" name="getEtatYesInputNoMode">
+          <ownedParameter xmi:id="_y3pXESTUEemEhp9TsvCH5A" type="_fHy6kCTPEemEhp9TsvCH5A" direction="return">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zr1NECTUEemEhp9TsvCH5A" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zr1NESTUEemEhp9TsvCH5A" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_0Gw1kCTUEemEhp9TsvCH5A" name="getEtatYesInputYesMode">
+          <ownedParameter xmi:id="_0Gw1kSTUEemEhp9TsvCH5A" type="_fHy6kCTPEemEhp9TsvCH5A" direction="return">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1rn6kCTUEemEhp9TsvCH5A" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1rn6kSTUEemEhp9TsvCH5A" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_l_snsCJ4EemfI8RyT9hO8w" name="observers" memberEnd="_l_snsSJ4EemfI8RyT9hO8w _l_sntCJ4EemfI8RyT9hO8w">
         <ownedEnd xmi:id="_l_snsSJ4EemfI8RyT9hO8w" name="presentationGlobals" type="_jSGPECIiEemfI8RyT9hO8w" association="_l_snsCJ4EemfI8RyT9hO8w">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l_snsiJ4EemfI8RyT9hO8w" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l_snsyJ4EemfI8RyT9hO8w" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_PaXRACTSEemEhp9TsvCH5A" name="IEtats" memberEnd="_PaXRASTSEemEhp9TsvCH5A _PaXRBCTSEemEhp9TsvCH5A">
+        <ownedEnd xmi:id="_PaXRASTSEemEhp9TsvCH5A" name="presentationGlobals" type="_jSGPECIiEemfI8RyT9hO8w" association="_PaXRACTSEemEhp9TsvCH5A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PaXRAiTSEemEhp9TsvCH5A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PaXRAyTSEemEhp9TsvCH5A" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_uG8doCTTEemEhp9TsvCH5A" name="presGlobal" memberEnd="_uG8doSTTEemEhp9TsvCH5A _uG8dpCTTEemEhp9TsvCH5A">
+        <ownedEnd xmi:id="_uG8doSTTEemEhp9TsvCH5A" name="vueGlobals" type="_Nf-mkCIiEemfI8RyT9hO8w" association="_uG8doCTTEemEhp9TsvCH5A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uG8doiTTEemEhp9TsvCH5A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uG8doyTTEemEhp9TsvCH5A" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_3P9QkCTTEemEhp9TsvCH5A" name="modelGlobal" memberEnd="_3P9QkSTTEemEhp9TsvCH5A _3P9QlCTTEemEhp9TsvCH5A">
+        <ownedEnd xmi:id="_3P9QkSTTEemEhp9TsvCH5A" name="presentationGlobals" type="_jSGPECIiEemfI8RyT9hO8w" association="_3P9QkCTTEemEhp9TsvCH5A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3P9QkiTTEemEhp9TsvCH5A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3P9QkyTTEemEhp9TsvCH5A" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_8BQm8CTUEemEhp9TsvCH5A" name="convert" memberEnd="_8BROACTUEemEhp9TsvCH5A _8BR1EiTUEemEhp9TsvCH5A" navigableOwnedEnd="_8BR1EiTUEemEhp9TsvCH5A">
+        <ownedEnd xmi:id="_8BROACTUEemEhp9TsvCH5A" name="modelGlobals" type="_VFg0kCIiEemfI8RyT9hO8w" association="_8BQm8CTUEemEhp9TsvCH5A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8BR1ECTUEemEhp9TsvCH5A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8BR1ESTUEemEhp9TsvCH5A" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_8BR1EiTUEemEhp9TsvCH5A" name="convert" type="_KKnmkCIdEemfI8RyT9hO8w" aggregation="composite" association="_8BQm8CTUEemEhp9TsvCH5A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8BScICTUEemEhp9TsvCH5A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8BScISTUEemEhp9TsvCH5A" value="1"/>
         </ownedEnd>
       </packagedElement>
     </packagedElement>
@@ -345,7 +529,7 @@
           <ownedParameter xmi:id="_a_YCkCIwEemfI8RyT9hO8w" name="pres" type="_ijsP8CItEemfI8RyT9hO8w"/>
         </ownedOperation>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_ijsP8CItEemfI8RyT9hO8w" name="PresenTationPanneauCmd" visibility="public">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ijsP8CItEemfI8RyT9hO8w" name="PresentationPanneauCmd" visibility="public">
         <ownedAttribute xmi:id="_UFFfFCIyEemfI8RyT9hO8w" name="vuePanneau" type="_U2UhACItEemfI8RyT9hO8w" association="_UFFfECIyEemfI8RyT9hO8w">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UFFfFSIyEemfI8RyT9hO8w" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UFFfFiIyEemfI8RyT9hO8w" value="1"/>
