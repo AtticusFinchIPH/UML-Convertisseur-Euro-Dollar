@@ -303,12 +303,22 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
           </ownedOperation>
+          <ownedOperation xmi:id="_tkap0CVLEem5LYQZuNvZBw" name="chooseCombo">
+            <ownedParameter xmi:id="_tkap0SVLEem5LYQZuNvZBw" name="mode">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_RtaHICTREemEhp9TsvCH5A" name="EtatYesInputNoMode" visibility="public">
           <generalization xmi:id="_hIG6kCTREemEhp9TsvCH5A" general="_i8y2MCTPEemEhp9TsvCH5A"/>
           <ownedOperation xmi:id="_Kg5AoCTSEemEhp9TsvCH5A" name="chooseCombo">
             <ownedParameter xmi:id="_Kg5AoSTSEemEhp9TsvCH5A" name="mode">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_l_Vu0CVLEem5LYQZuNvZBw" name="fillText">
+            <ownedParameter xmi:id="_l_Vu0SVLEem5LYQZuNvZBw" name="txt">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
           </ownedOperation>
         </packagedElement>
